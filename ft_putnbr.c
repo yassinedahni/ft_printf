@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 15:53:51 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/27 02:52:18 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/27 17:27:59 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,11 @@ int	ft_counterint(long int n)
 	return (i + flag);
 }
 
-int ft_putnbr(int nbr)
+int	ft_putnbr(int nbr)
 {
-	unsigned int nb;
-	long	int	tmp;
-	
+	unsigned int	nb;
+	long int		tmp;
+
 	tmp = nbr;
 	if (nbr < 0)
 	{
@@ -57,7 +57,6 @@ int ft_putnbr(int nbr)
 	{
 		ft_putnbr(nb / 10);
 		ft_putchar((nb % 10) + 48);
-		
 	}
 	if (nb < 10)
 	{

@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 16:57:57 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/27 03:02:13 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/27 17:42:32 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_counteru(unsigned int n)
 {
 	int	i;
-	
+
 	i = 0;
 	if (n == 0)
 		return (1);
@@ -27,9 +27,9 @@ int	ft_counteru(unsigned int n)
 	return (i);
 }
 
-int ft_putnbr_un(unsigned int nbr)
+int	ft_putnbr_un(unsigned int nbr)
 {
-	unsigned int n;
+	unsigned int	n;
 
 	n = nbr;
 	if (nbr >= 10)
@@ -39,6 +39,5 @@ int ft_putnbr_un(unsigned int nbr)
 	}
 	else
 		ft_putchar(nbr + 48);
-
-    return (ft_counteru(n));
+	return (ft_counteru(n));
 }

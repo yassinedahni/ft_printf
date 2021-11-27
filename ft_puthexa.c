@@ -6,7 +6,7 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 04:02:21 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/27 03:24:53 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/27 17:41:54 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,34 @@
 
 int	ft_counterx(int long n)
 {
-    int i; 
+	int	i;
 
-    i = 0;
-    if (n == 0)
-        return (1);
+	i = 0;
+	if (n == 0)
+		return (1);
 	while (n > 0)
 	{
 		i++;
-        n /= 16;
+		n /= 16;
 	}
 	return (i);
 }
 
-int ft_puthexa(unsigned int n)
+int	ft_puthexa(unsigned int n)
 {
-    unsigned int nb;
-    
-    nb = n;
-    char hexa[16] = "0123456789abcdef";
-    if (n >= 16)
-    {
-        ft_puthexa(n / 16);
-        ft_puthexa(n % 16);
-    }
-    else
-        write(1, &hexa[nb], 1);
-    return (ft_counterx(nb));
+	char			*hexa;
+	unsigned int	nb;
+
+	nb = n;
+	hexa = "0123456789abcdef";
+	if (n >= 16)
+	{
+		ft_puthexa(n / 16);
+		ft_puthexa(n % 16);
+	}
+	else
+		write(1, &hexa[nb], 1);
+	return (ft_counterx(nb));
 }
 // int main()
 // {

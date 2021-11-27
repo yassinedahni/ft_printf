@@ -6,14 +6,14 @@
 /*   By: ydahni <ydahni@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 22:25:17 by ydahni            #+#    #+#             */
-/*   Updated: 2021/11/26 19:51:31 by ydahni           ###   ########.fr       */
+/*   Updated: 2021/11/27 17:40:20 by ydahni           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int   ft_putchar(char c)
+int	ft_putchar(char c)
 {
-    write(1, &c, 1);
-    return (1);
+	write(1, &c, 1);
+	return (1);
 }
